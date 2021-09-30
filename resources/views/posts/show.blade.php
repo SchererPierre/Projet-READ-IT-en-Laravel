@@ -13,6 +13,8 @@
 
   {{ $post->content }}
 
+  @include('tags._index', ['tags' => $post->tags])
+
   <div class="about-author d-flex p-4 bg-light">
     <div class="bio mr-5">
       <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
